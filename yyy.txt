@@ -1,23 +1,17 @@
 #include<stdio.h>
-#include<stdlib.h>
 
 int main()
 {
-int n;
+int n,i,a=0,b=1,c;
 printf("Enter the number of elements:\n");
 scanf("%d",&n);
+printf("Fibonacci series:");
+for(i=1;i<=n; ++i)
+{
+printf("%d",a);
+c=a+b;
+a=b;
+b=c;
+}
 return 0;
-}
-int fib(int n)
-{
-if(n<0)
-return 0;
-else if (n<1)
-{
-return 1;
-}
-else
-{
-return (fib(n-1) + fib(n-2));
-}
 }
